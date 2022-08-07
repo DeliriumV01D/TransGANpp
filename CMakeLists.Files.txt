@@ -1,0 +1,22 @@
+cmake_minimum_required(VERSION 3.8)
+
+#project(TransGAN++)
+
+set(SOURCES ${SOURCES}
+	src/main.cpp
+)
+
+set(HEADERS ${HEADERS}
+)
+
+set(LIBS ${LIBS}
+	${OpenCV_LIBS}
+	${TORCH_LIBRARIES}
+)
+
+if(MSVC_IDE)
+	source_group("src" FILES ${Files_src})
+
+	source_group("" FILES CMakeLists.Files.txt)
+endif()
+
